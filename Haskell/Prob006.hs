@@ -1,8 +1,8 @@
-square :: Int -> Int
-square x = x * x
+main :: IO ()
+main = print answer
 
 answer :: Int
 answer = square (sum [1 .. 100]) - sum (map square [1 .. 100])
 
-main :: IO ()
-main = print answer
+square :: Int -> Int
+square x = x * x

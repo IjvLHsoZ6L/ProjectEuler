@@ -1,9 +1,8 @@
-fibonacci :: [Int]
-fibonacci = fib_rec 1 2
-    where fib_rec a b = a : fib_rec b (a + b)
+main :: IO ()
+main = print answer
 
 answer :: Int
 answer = sum [ x | x <- takeWhile (<= 4000000) fibonacci , even x ]
 
-main :: IO ()
-main = print answer
+fibonacci :: [Int]
+fibonacci = f 1 2 where f a b = a : f b (a + b)

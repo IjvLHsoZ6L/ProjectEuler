@@ -1,11 +1,15 @@
-largestPrimeFactor :: Integer -> Integer
-largestPrimeFactor = lpf_rec 2
-    where lpf_rec d n | n < d * d      = n
-                      | n `mod` d == 0 = lpf_rec d (n `div` d)
-                      | otherwise      = lpf_rec (d + 1) n
+main :: IO ()
+main = print answer
 
 answer :: Integer
 answer = largestPrimeFactor 600851475143
 
-main :: IO ()
-main = print answer
+largestPrimeFactor :: Integer -> Integer
+largestPrimeFactor = f 2 where
+    f d n
+        | n < d * d
+            = n
+        | n `mod` d == 0
+            = f d (n `div` d)
+        | otherwise
+            = f (d + 1) n
