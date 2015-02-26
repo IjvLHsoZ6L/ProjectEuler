@@ -1,25 +1,24 @@
-import Control.Monad
-import Data.Array.Base
-import Data.Array.ST
+import Data.Array.ST.Safe
+import Data.Array.Unboxed
 
-eratosthenes :: Int -> UArray Int Bool
-eratosthenes n = runSTUArray $ do
-    a <- newArray (2 , n) True
-    forM_ [2 .. floor (sqrt (fromIntegral n :: Float))] $ \ i -> do
-        p <- readArray a i
-        when p $ forM_ [i .. n `div` i] $ \ j ->
-            writeArray a (i * j) False
+n :: Int
+n = 2000000
+
+primeArray :: UArray Int Bool
+primeArray = runSTUArray $ do
+    a <- newArray (2, n) True
+    sequence_
+        [ writeArray a (i * j) False
+        | i <- takeWhile (\ i -> i * i <= n) [2 .. ]
+        , j <- takeWhile (\ j -> i * j <= n) [i .. ]
+        ]
     return a
 
-isPrime :: Int -> Bool
-isPrime n = eratosthenes 2000000 ! n
+primeList :: [Int]
+primeList = filter (\ i -> primeArray ! i) [2 .. n]
 
 answer :: Int
-answer = find 10001 2
-    where find :: Int -> Int -> Int
-          find count i | isPrime i && count == 1 = i
-                       | isPrime i               = find (count - 1) (i + 1)
-                       | otherwise               = find count       (i + 1)
+answer = primeList !! 10001
 
 main :: IO ()
 main = print answer
