@@ -9,14 +9,18 @@ answer :: Int
 answer = primeList !! 10001
 
 primeList :: [Int]
-primeList = filter (\ i -> primeArray ! i) [2 .. n]
+primeList = filter (primeArray !) [2 .. n]
 
 primeArray :: UArray Int Bool
 primeArray = runSTUArray $ do
     a <- newArray (2, n) True
-    forM_ [2 .. floor $ sqrt (fromIntegral n :: Double)] $ \ i ->
-        readArray a i >>= flip when (forM_ [i .. n `div` i] $ \ j ->
-            writeArray a (i * j) False)
+    sequence_
+        [ (readArray a i >>=) $ flip when $ sequence_
+            [ writeArray a (i * j) False
+            | j <- [i .. n `div` i]
+            ]
+        | i <- [2 .. floor $ sqrt (fromIntegral n :: Double)]
+        ]
     return a
 
 n :: Int
