@@ -9,19 +9,22 @@ answer :: Int
 answer = primeList !! 10001
 
 primeList :: [Int]
-primeList = filter (primeArray !) [2 .. n]
+primeList = filter (primeArray !) (indices primeArray)
 
 primeArray :: UArray Int Bool
 primeArray = runSTUArray $ do
     a <- newArray (2, n) True
-    sequence_
-        [ (readArray a i >>=) $ flip when $ sequence_
-            [ writeArray a (i * j) False
-            | j <- [i .. n `div` i]
-            ]
-        | i <- [2 .. floor $ sqrt (fromIntegral n :: Double)]
-        ]
+    forM_ [2 .. root n] $ \ i ->
+        whenM (readArray a i) $
+            forM_ [i .. n `div` i] $ \ j ->
+                writeArray a (i * j) False
     return a
+    where n = 2000000
 
-n :: Int
-n = 2000000
+root :: Int -> Int
+root = floor . sqrt . (fromIntegral :: Int -> Double)
+
+whenM :: Monad m => m Bool -> m () -> m ()
+whenM mb mu = do
+    b <- mb
+    when b mu
