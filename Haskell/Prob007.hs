@@ -1,30 +1,24 @@
 import Control.Monad
-import Data.Array.ST.Safe
 import Data.Array.Unboxed
 
 main :: IO ()
 main = print answer
 
 answer :: Int
-answer = primeList !! 10001
+answer = primesTo 2000000 !! 10001
 
-primeList :: [Int]
-primeList = filter (primeArray !) (indices primeArray)
-
-primeArray :: UArray Int Bool
-primeArray = runSTUArray $ do
-    a <- newArray (2, n) True
-    forM_ [2 .. root n] $ \ i ->
-        whenM (readArray a i) $
-            forM_ [i .. n `div` i] $ \ j ->
-                writeArray a (i * j) False
-    return a
-    where n = 2000000
-
-root :: Int -> Int
-root = floor . sqrt . (fromIntegral :: Int -> Double)
-
-whenM :: Monad m => m Bool -> m () -> m ()
-whenM mb mu = do
-    b <- mb
-    when b mu
+primesTo :: Int -> [Int]
+primesTo n = aux 2 a0 where
+    aux :: Int -> UArray Int Bool -> [Int]
+    aux i a
+        | i > n
+            = []
+        | a ! i && i * i > n
+            = i : aux (i + 1) a
+        | a ! i
+            = i : aux (i + 1) a'
+        | otherwise
+            = aux (i + 1) a
+        where a' = a // [ (i * j, False) | j <- [i .. n `div` i] ]
+    a0 :: UArray Int Bool
+    a0 = array (2, n) [ (i, True) | i <- [2 .. n] ]
