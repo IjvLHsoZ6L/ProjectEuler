@@ -1,15 +1,18 @@
 // 0022.cpp
 #include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 
 int main() {
 
+    ifstream file("0022.txt");
+
     int size = 5163;
 
     string name[size];
     for ( int i = 0; i < size; i++ )
-        cin >> name[i];
+        file >> name[i];
 
     for ( int i = 0; i < size; i++ ) {
         for ( int j = 0; j + 1 < size - i; j++ ) {
@@ -25,8 +28,8 @@ int main() {
     for ( int i = 0; i < size; i++ ) {
 
         int score = 0;
-        for ( int l = 0; l < name[i].length(); l++ )
-            score += name[i].at(l) - 'A' + 1;
+        for (char c : name[i])
+            score += c - 'A' + 1;
 
         sum += score * (i + 1);
     }

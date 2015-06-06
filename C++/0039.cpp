@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    int max = 0, pmax;
+    int max = 0, pmax = 0;
     for ( int p = 0; p <= target; p++ ) {
         if ( max < rats[p] ) {
             max = rats[p];

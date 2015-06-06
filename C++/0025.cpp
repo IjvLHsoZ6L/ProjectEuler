@@ -6,7 +6,7 @@ int main() {
 
     int target = 1000;
 
-    int max = 0, nmax;
+    int max = 0, nmax = 0;
     for ( int n = 2; n < target; n++ ) {
 
         int appear[n];

@@ -14,8 +14,6 @@ int main() {
             for ( int j = 1; i*j < target; j++ )
                 factors[i*j]++;
 
-    bool detected = false;
-    int answer;
     for ( int i = 1; i + 4 <= target; i++ ) {
 
         bool consective = true;
@@ -23,12 +21,10 @@ int main() {
             consective and_eq (factors[i + j] == 4);
 
         if ( consective ) {
-            detected = true;
-            answer = i;
+            cout << i << endl;
+            return 0;
         }
     }
 
-    cout << answer << endl;
-
-    return 0;
+    return 1;
 }

@@ -16,7 +16,7 @@ int main() {
             for ( int j = i; i*j < range; j++ )
                 prime[i*j] = false;
 
-    int max = 0, amax, bmax;
+    int max = 0, amax = 0, bmax = 0;
     for ( int a = - target + 1; a < target; a++ )
         for ( int b = - target + 1; b < target; b++ ) {
 

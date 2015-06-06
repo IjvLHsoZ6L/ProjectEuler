@@ -39,7 +39,7 @@ int main() {
         }
     }
 
-    int max = 0, startmax;
+    int max = 0, startmax = 0;
     for ( int start = 1; start < target; start++ ) {
         if ( length[start] > max ) {
             max = length[start];

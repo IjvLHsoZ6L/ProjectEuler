@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    int maxlength = 0, maxsum;
+    int maxlength = 0, maxsum = 0;
     for ( int start = 0; maxlength * p[start] < target; start++ ) {
 
         int sum = p[start];
