@@ -1,41 +1,36 @@
-// 0058.cpp
 #include <iostream>
-#include <bitset>
+
 using namespace std;
 
-const int SIZE = 8e8;      // 素数表のサイズ
-static bitset<SIZE> prime; // 素数表
+inline bool is_prime(long n) {
+    for (long d = 2; d * d <= n; d++)
+        if (n % d == 0)
+            return false;
+    return true;
+}
 
 int main() {
 
-    for (int i = 2; i < SIZE; i++)
-        prime.set(i);
-    for (int i = 2; i * i < SIZE; i++)
-        if (prime.test(i))
-            for (int j = i * i; j < SIZE; j += i)
-                prime.reset(j);
-
-    int size = 1;        // 正方形の一辺の長さ
-    int current = 1;     // 現在の数字
-    int count = 1;       // 対角線上の個数 (最初は1のみ）
-    int prime_count = 0; // 見つかった素数の数
+    long current = 1;
+    int size = 1;
+    int total_count = 1;
+    int prime_count = 0;
     while (true) {
+
         size += 2;
+        total_count += 4;
+
         for (int i = 0; i < 4; i++) {
             current += size - 1;
-            if (current >= SIZE) {
-                cout << "SIZE is too small" << endl;
-                return 1;
-            }
-            count++;
-            if (prime.test(current))
+            if (is_prime(current))
                 prime_count++;
         }
-        if (10 * prime_count < count) {
-            cout << size << endl;
-            return 0;
-        }
+
+        if (10 * prime_count < total_count)
+            break;
     }
 
-    return 1;
+    cout << size << endl;
+
+    return 0;
 }
