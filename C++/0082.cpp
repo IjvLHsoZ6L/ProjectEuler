@@ -1,5 +1,6 @@
-// 082.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
 int main() {
@@ -7,9 +8,13 @@ int main() {
     int SIZE = 80;
 
     int a[SIZE][SIZE];
+
+    ifstream file;
+    file.open("src/0082.txt");
     for ( int i = 0; i < SIZE; i++ )
         for ( int j = 0; j < SIZE; j++ )
-            cin >> a[i][j];
+            file >> a[i][j];
+    file.close();
 
     int minsum[SIZE][SIZE];
 

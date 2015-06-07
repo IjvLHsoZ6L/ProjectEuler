@@ -86,6 +86,7 @@ rat op(rat a, rat b, int o) {
         case 3: return a * b;
         case 4: return a / b;
         case 5: return b / a;
+        default: throw "illegal operator";
     }
 }
 

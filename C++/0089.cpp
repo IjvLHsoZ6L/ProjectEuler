@@ -1,15 +1,25 @@
-// 089.cpp
 #include <iostream>
+#include <fstream>
 #include <string>
+
 using namespace std;
+
+const int SIZE = 1000;
 
 int main() {
 
-    int SIZE = 1000;
+    string data[SIZE];
+
+    ifstream file;
+    file.open("src/0089.txt");
+    for (int i = 0; i < SIZE; i++)
+        file >> data[i];
+    file.close();
+
     int saved = 0;
     for ( int i = 0; i < SIZE; i++ ) {
-        string roman;
-        cin >> roman;
+
+        string roman = data[i];
 
         saved += roman.length();
 

@@ -1,22 +1,25 @@
-// 0042.cpp
 #include <iostream>
 #include <fstream>
+
 using namespace std;
+
+const int SIZE = 1786;
 
 int main() {
 
-    ifstream file("0042.txt");
+    string words[SIZE];
 
-    int size = 1786;
+    ifstream file;
+    file.open("src/0042.txt");
+    for (int i = 0; i < SIZE; i++)
+        file >> words[i];
+    file.close();
 
     int cnt = 0;
-    for ( int i = 0; i < size; i++ ) {
-
-        string str;
-        file >> str;
+    for ( int i = 0; i < SIZE; i++ ) {
 
         int sum = 0;
-        for (char c : str)
+        for (char c : words[i])
             sum += c - 'A' + 1;
 
         int T = 1;

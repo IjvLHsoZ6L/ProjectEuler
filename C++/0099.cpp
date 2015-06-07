@@ -1,5 +1,6 @@
-// 099.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
 const long long modulo = 1e8;
@@ -36,6 +37,7 @@ class big {
         big operator=(const big& a) {
             index = a.index;
             base = a.base;
+            return *this;
         }
 
         big operator*(int n) {
@@ -61,16 +63,20 @@ class big {
         }
 };
 
-int main() {
+const int SIZE = 1000;
 
-    int SIZE = 1000;
+int main() {
 
     int base[SIZE];
     int index[SIZE];
+
+    ifstream file;
+    file.open("src/0099.txt");
     for ( int i = 0; i < SIZE; i++ ) {
-        cin >> base[i];
-        cin >> index[i];
+        file >> base[i];
+        file >> index[i];
     }
+    file.close();
 
     big max = 0;
     int imax = 0;

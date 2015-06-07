@@ -1,177 +1,187 @@
-// 096.cpp
 #include <iostream>
+#include <fstream>
+#include <bitset>
+#include <array>
+#include <list>
+#include <set>
+
 using namespace std;
 
-/* v    i   j   k
- * 0    row col num
- * 1    num row col
- * 2    num col row
- * 3    num BOX box
- */
+const int BOX_SIZE  = 3;
+const int DIGIT     = BOX_SIZE * BOX_SIZE;
+const int COORD     = DIGIT * DIGIT * DIGIT;
+const int BLOCK     = 4 * DIGIT * DIGIT;
 
-int i_(int v, int p) {
-    switch ( v ) {
-        case 0: return p/9/9;
-        case 1: return p%9;
-        case 2: return p%9;
-        case 3: return p%9;
-    }
+const int DEFINED = 99;
+
+const int NO_SOLUTION = 666;
+
+array<list<int>, BLOCK> coords;
+array<list<int>, COORD> owners;
+array<list<int>, COORD> others;
+
+inline int to_coord(int i, int j, int d) {
+    return (i * DIGIT + j) * DIGIT + d;
 }
 
-int j_(int v, int p) {
-    switch ( v ) {
-        case 0: return p/9%9;
-        case 1: return p/9/9;
-        case 2: return p/9%9;
-        case 3: return p/9/9/3*3 + p/9%9/3;
-    }
+inline int to_block(int v, int p, int q) {
+    return (v * DIGIT + p) * DIGIT + q;
 }
 
-int k_(int v, int p) {
-    switch ( v ) {
-        case 0: return p%9;
-        case 1: return p/9%9;
-        case 2: return p/9/9;
-        case 3: return p/9/9%3*3 + p/9%9%3;
+void initialize() {
+    for (int i = 0; i < DIGIT; i++) {
+        for (int j = 0; j < DIGIT; j++) {
+            for (int d = 0; d < DIGIT; d++) {
+                int c = to_coord(i, j, d);
+                int p = i / BOX_SIZE * BOX_SIZE + j / BOX_SIZE;
+                coords[to_block(0, i, j)].push_back(c);
+                coords[to_block(1, i, d)].push_back(c);
+                coords[to_block(2, j, d)].push_back(c);
+                coords[to_block(3, p, d)].push_back(c);
+            }
+        }
     }
-}
-
-int p_(int v, int i, int j, int k) {
-    switch ( v ) {
-        case 0: return i*9*9 + j*9 + k;
-        case 1: return j*9*9 + k*9 + i;
-        case 2: return k*9*9 + j*9 + i;
-        case 3: return (j/3*3 + k/3)*9*9 + (j%3*3 + k%3)*9 + i;
+    for (int b = 0; b < BLOCK; b++)
+        for (int c : coords[b])
+            owners[c].push_back(b);
+    for (int coord = 0; coord < COORD; coord++) {
+        set<int> cs;
+        for (int b : owners[coord])
+            for (int c : coords[b])
+                cs.insert(c);
+        cs.erase(coord);
+        for (int c : cs)
+            others[coord].push_back(c);
     }
 }
 
 class sudoku {
-
+    private:
+        bitset<COORD> possible;
+        array<int, BLOCK> options;
     public:
-
-        bool possible[9*9*9];
-        bool defined[4][9][9];
-        int value[4][9][9];
-
         sudoku() {
-            for ( int p = 0; p < 9*9*9; p++ )
-                possible[p] = true;
-            for ( int v = 0; v < 4; v++ ) {
-                for ( int i = 0; i < 9; i++ ) {
-                    for ( int j = 0; j < 9; j++ ) {
-                        defined[v][i][j] = false;
-                        value[v][i][j] = -1;
+            clear();
+        }
+        sudoku(const sudoku & sudoku) {
+            copy(sudoku);
+        }
+        sudoku & read(istream & input) {
+            for (int i = 0; i < DIGIT; i++) {
+                for (int j = 0; j < DIGIT; j++) {
+                    int d;
+                    input >> d;
+                    if (d > 0) {
+                        d--;
+                        assign(to_coord(i, j, d));
                     }
                 }
             }
+            return *this;
         }
-
-        void fill(int p) {
-            for ( int v = 0; v < 4; v++ ) {
-                int i0 = i_(v, p);
-                int j0 = j_(v, p);
-                int k0 = k_(v, p);
-                defined[v][i0][j0] = true;
-                value[v][i0][j0] = k0;
-                for ( int k = 0; k < 9; k++ )
-                    possible[p_(v, i0, j0, k)] = false;
-            }
-        }
-
-        void load() {
-            for ( int i = 0; i < 9; i++ ) {
-                for ( int j = 0; j < 9; j++ ) {
-                    int n;
-                    cin >> n;
-                    if ( n > 0 )
-                        fill(p_(0, i, j, n-1));
-                }
-            }
-        }
-
-        void printf() {
-            for ( int i = 0; i < 9; i++ ) {
-                for ( int j = 0; j < 9; j++ ) {
-                    if ( defined[0][i][j] )
-                        cout << "[" << value[0][i][j] + 1 << "]";
-                    else
-                        cout << "[ ]";
-                }
-                cout << endl;
-            }
-            cout << endl;
-        }
-
-        void reduce() {
-            bool changed;
-            do {
-                changed = false;
-                for ( int v = 0; v < 4; v++ ) {
-                    for ( int i = 0; i < 9; i++ ) {
-                        for ( int j = 0; j < 9; j++ ) {
-                            if ( not defined[v][i][j] ) {
-
-                                int cnt = 0;
-                                int k0;
-                                for ( int k = 0; k < 9; k++ ) {
-                                    if ( possible[p_(v, i, j, k)] ) {
-                                        cnt++;
-                                        k0 = k;
-                                    }
-                                }
-
-                                if ( cnt == 0 ) {
-                                    throw(0);
-                                } else if ( cnt == 1 ) {
-                                    fill(p_(v, i, j, k0));
-                                    changed = true;
-                                }
-                            }
-                        }
-                    }
-                }
-            } while ( changed );
-        }
-
-        void solve() {
-
-            reduce();
-
-            int p = 0;
-            while ( p < 9*9*9 and (not possible[p]) )
-                p++;
-
-            if ( p == 9*9*9 )
-                return;
-            else {
-                sudoku t = *this;
-                t.fill(p);
+        sudoku & solve() {
+            int b_min = -1;
+            int min = DEFINED;
+            for (int b = 0; b < BLOCK; b++)
+                if (options[b] < min)
+                    min = options[b_min = b];
+            if (min == DEFINED)
+                return *this;
+            sudoku saved = *this;
+            for (int c : coords[b_min]) {
                 try {
-                    t.solve();
-                    *this = t;
-                    return;
+                    return copy(saved).assign(c).solve();
                 }
-                catch ( int zero ) {
-                    possible[p] = false;
-                    solve();
-                    return;
+                catch (int no_solution) {
+                    continue;
                 }
             }
+            throw NO_SOLUTION;
+        }
+
+        int top_left() {
+            int d[3];
+            int i = 0;
+            for (int j = 0; j < 3; j++) {
+                d[j] = 0;
+                while (!possible[to_coord(i, j, d[j])] && d[j] < DIGIT)
+                    d[j]++;
+                if (d[j] == DIGIT)
+                    throw "top_left: illegal sudoku object";
+                d[j]++;
+            }
+            return (d[0] * 10 + d[1]) * 10 + d[2];
+        }
+        sudoku & clear() {
+            for (int c = 0; c < COORD; c++)
+                possible[c] = true;
+            for (int b = 0; b < BLOCK; b++)
+                options[b] = DIGIT;
+            return *this;
+        }
+        sudoku & copy(const sudoku & sudoku) {
+            for (int c = 0; c < COORD; c++)
+                possible[c] = sudoku.possible[c];
+            for (int b = 0; b < BLOCK; b++)
+                options[b] = sudoku.options[b];
+            return *this;
+        }
+    private:
+        sudoku & assign(int coord) {
+            if (!possible[coord])
+                throw NO_SOLUTION;
+            list<int> cs;
+            for (int c : others[coord])
+                if (possible[c])
+                    cs.push_back(c);
+            list<int> bs;
+            for (int c : cs)
+                for (int b : owners[c])
+                    bs.push_back(b);
+            for (int c : cs)
+                possible[c] = false;
+            for (int b : bs)
+                options[b]--;
+            for (int b : owners[coord])
+                options[b] = DEFINED;
+            for (int b : bs)
+                check(b);
+            return *this;
+        }
+        sudoku & check(int block) {
+            if (options[block] == 0)
+                throw NO_SOLUTION;
+            if (options[block] == 1) {
+                int coord = -1;
+                for (int c : coords[block])
+                    if (possible[c])
+                        coord = c;
+                if (coord == -1)
+                    throw "check: illegal sudoku object";
+                return assign(coord);
+            }
+            return *this;
         }
 };
 
-
 int main() {
-
+    initialize();
+    ifstream file("src/0096.txt");
     int sum = 0;
-    for ( int cnt = 0; cnt < 50; cnt++ ) {
-        sudoku s;
-        s.load();
-        s.solve();
-        sum += (s.value[0][0][0]+1)*100 + (s.value[0][0][1]+1)*10 + (s.value[0][0][2]+1);
+    sudoku sudoku;
+    for (int i = 0; i < 50; i++) {
+        try {
+            sum += sudoku.clear().read(file).solve().top_left();
+        }
+        catch (int no_solution) {
+            cout << "at i = " << i << ": no solution" << endl;
+            return 1;
+        }
+        catch (const char* s) {
+            cout << "at i = " << i << ": Error " << s << endl;
+            return 1;
+        }
     }
-
     cout << sum << endl;
-
     return 0;
 }

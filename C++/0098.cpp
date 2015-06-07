@@ -1,14 +1,19 @@
-// 098.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
+
+const int SIZE = 1786;
 
 int main() {
 
-    int SIZE = 1786;
-
     string word[SIZE];
+
+    ifstream file;
+    file.open("src/0098.txt");
     for ( int i = 0; i < SIZE; i++ )
-        cin >> word[i];
+        file >> word[i];
+    file.close();
 
     int length[SIZE];
     for ( int i = 0; i < SIZE; i++ )

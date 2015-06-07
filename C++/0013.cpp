@@ -1,38 +1,40 @@
-// 0013.cpp
 #include <iostream>
+#include <fstream>
+#include <string>
+
 using namespace std;
+
+const int SIZE  = 100;
+const int DIGIT = 50;
 
 int main() {
 
-    int size = 100;
-    int dmax = 100;
-    int dgiven = 50;
+    int array[SIZE][DIGIT];
 
-    int value[dmax];
-    for ( int i = 1; i < dmax; i++ )
-        value[i] = 0;
+    ifstream file;
+    file.open("src/0013.txt");
+    for (int i = 0; i < SIZE; i++) {
+        string string;
+        file >> string;
+        for (int j = 0; j < DIGIT; j++)
+            array[i][j] = string.at(j) - '0';
+    }
+    file.close();
 
-    for ( int i = 0; i < size; i++ ) {
-
-        for ( int j = 0; j < dgiven; j++ ) {
-            int n;
-            cin >> n;
-            value[50 - j] += n;
-        }
-
-        for ( int j = 1; j+1 < dmax; j++ ) {
-            value[j+1] += value[j] / 10;
-            value[j] %= 10;
-        }
+    int sum[DIGIT];
+    for (int j = 0; j < DIGIT; j++)
+        sum[j] = 0;
+    for (int i = 0; i < SIZE; i++)
+        for (int j = 0; j < DIGIT; j++)
+            sum[j] += array[i][j];
+    for (int j = DIGIT - 1; j > 0; j--) {
+        sum[j - 1] += sum[j] / 10;
+        sum[j] %= 10;
     }
 
-    int j = dmax-1;
-    while ( value[j] == 0 )
-        j--;
+    string result;
+    for (int j = 0; result.length() < 10; j++)
+        result += to_string(sum[j]);
 
-    for ( int k = 0; k < 10; k++ )
-        cout << value[j-k];
-    cout << endl;
-
-    return 0;
+    cout << result << endl;
 }

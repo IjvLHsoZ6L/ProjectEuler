@@ -1,37 +1,42 @@
-// 0107.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
+
+const int SIZE = 40;
 
 int main() {
 
-    int size = 40;
+    int weight[SIZE][SIZE];
 
-    int weight[size][size];
-    for ( int i = 0; i < size; i++ )
-        for ( int j = 0; j < size; j++ )
-            cin >> weight[i][j];
+    ifstream file;
+    file.open("src/0107.txt");
+    for ( int i = 0; i < SIZE; i++ )
+        for ( int j = 0; j < SIZE; j++ )
+            file >> weight[i][j];
+    file.close();
 
     int before= 0;
-    for ( int i = 0; i < size; i++ )
+    for ( int i = 0; i < SIZE; i++ )
         for ( int j = 0; j < i; j++ )
             before += weight[i][j];
 
     int max = 0;
-    for ( int i = 0; i < size; i++ )
+    for ( int i = 0; i < SIZE; i++ )
         for ( int j = 0; j < i; j++ )
             if ( max < weight[i][j] )
                 max = weight[i][j];
 
     while ( max > 0 ) {
 
-        for ( int i = 0; i < size; i++ ) {
+        for ( int i = 0; i < SIZE; i++ ) {
             for ( int j = 0; j < i; j++ ) {
                 if ( weight[i][j] == max ) {
 
                     weight[i][j] = weight[j][i] = 0;
 
-                    bool connected[size];
-                    for ( int k = 0; k < size; k++ )
+                    bool connected[SIZE];
+                    for ( int k = 0; k < SIZE; k++ )
                         connected[k] = false;
                     connected[i] = true;
 
@@ -40,9 +45,9 @@ int main() {
 
                         changed = false;
 
-                        for ( int k = 0; k < size; k++ ) {
+                        for ( int k = 0; k < SIZE; k++ ) {
                             if ( connected[k] ) {
-                                for ( int l = 0; l < size; l++ ) {
+                                for ( int l = 0; l < SIZE; l++ ) {
                                     if ( weight[k][l] > 0 and not connected[l] ) {
                                         changed = true;
                                         connected[l] = true;
@@ -62,7 +67,7 @@ int main() {
     }
 
     int after = 0;
-    for ( int i = 0; i < size; i++ )
+    for ( int i = 0; i < SIZE; i++ )
         for ( int j = 0; j < i; j++ )
             after += weight[i][j];
 

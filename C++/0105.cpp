@@ -1,67 +1,91 @@
-// 0105.cpp
 #include <iostream>
+#include <fstream>
+#include <utility>
+#include <list>
+#include <set>
+
 using namespace std;
+
+inline bool is_special(list<int> as) {
+    int n = as.size();
+    int array[n]; {
+        int i = 0;
+        for (int a : as) {
+            array[i] = a;
+            i++;
+        }
+        for (int i = n; i > 0; i--)
+            for (int j = 0; j + 1 < i; j++)
+                if (array[j] > array[j + 1])
+                    swap(array[j], array[j + 1]);
+    }
+    int i = 1;
+    int j = 0;
+    int sum_A = array[0];
+    int sum_B = 0;
+    while (true) {
+        i++;
+        j++;
+        if (i + j > n)
+            break;
+        sum_A += array[i - 1];
+        sum_B += array[n - j];
+        if (sum_A < sum_B)
+            return false;
+    }
+    set<int> sums; {
+        sums.insert(0);
+    }
+    list<int> queue;
+    for (int a : as) {
+        queue.clear();
+        for (int s : sums)
+            queue.push_back(s);
+        for (int s : queue) {
+            if (sums.count(s + a) > 0)
+                return false;
+            sums.insert(s + a);
+        }
+    }
+    return true;
+}
+
+inline int sum(list<int> as) {
+    int s = 0;
+    for (int a : as)
+        s += a;
+    return s;
+}
+
+const int SIZE = 100;
 
 int main() {
 
-    int size = 12 + 2;
-
-    int sum = 0;
-    for ( int i = 0; i < 100; i++ ) {
-
-        int a[size], length;
-        a[0] = 1; // dummy;
-
-        for ( length = 1; a[length - 1] > 0; length++ )
-            cin >> a[length];
-        length -= 2;
-
-        for ( int k = length; k > 1; k-- ) {
-            for ( int l = 1; l < k; l++ ) {
-                if ( a[l] > a[l + 1] ) {
-                    int temp = a[l];
-                    a[l] = a[l + 1];
-                    a[l + 1] = temp;
+    list<int> data[SIZE]; {
+        ifstream file;
+        file.open("src/0105.txt");
+        for (int i = 0; i < SIZE; i++) {
+            while (true) {
+                int n;
+                file >> n;
+                data[i].push_back(n);
+                if (file.peek() == ',') {
+                    file.ignore(1);
+                    continue;
                 }
+                break;
             }
         }
-
-        int b[length + 1];
-        b[0] = 0;
-        for ( int k = 1; k <= length; k++ )
-            b[k] = b[k - 1] + a[k];
-
-        bool propii = true;
-        for ( int k = 1; 2 * k < length; k++ )
-            propii and_eq (b[k + 1] > b[length] - b[length - k]);
-
-        if ( propii ) {
-
-            bool appear[length + 1][b[length] + 1];
-            for ( int k = 0; k <= length; k++ )
-                for ( int n = 0; n <= b[k]; n++ )
-                    appear[k][n] = false;
-
-            bool propi = true;
-            appear[0][0] = true;
-            for ( int k = 1; k <= length; k++ ) {
-                for ( int n = 0; n <= b[k - 1]; n++ ) {
-                    if ( appear[k - 1][n] ) {
-
-                        if ( appear[k][n] )
-                            propi = false;
-
-                        appear[k][n] = appear[k][n + a[k]] = true;
-                    }
-                }
-            }
-
-            if ( propi )
-                sum += b[length];
-        }
+        file.close();
     }
 
-    cout << sum << endl;
+    int total_sum = 0; {
+        for (int i = 0; i < SIZE; i++)
+            if (is_special(data[i]))
+                total_sum += sum(data[i]);
+    }
+
+    cout << total_sum << endl;
 
     return 0;
 }

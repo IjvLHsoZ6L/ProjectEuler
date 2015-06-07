@@ -1,26 +1,30 @@
-// 0018.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
-int max(int a, int b) {
-    return (a > b) ? a : b;
+const int SIZE = 15;
+
+inline int max(int a, int b) {
+    return a > b ? a : b;
 }
 
 int main() {
-    const int size = 15;
-    int x[size][size];
 
-    for ( int i = 0; i < size; i++ ) {
-        for ( int j = 0; j <= i; j++ ) {
-            cin >> x[i][j];
-        }
-    }
+    int array[SIZE][SIZE];
 
-    for ( int i = size-2; i >= 0; i-- )
-        for ( int j = 0; j <= i; j++ )
-            x[i][j] += max(x[i+1][j], x[i+1][j+1]);
+    ifstream file;
+    file.open("src/0018.txt");
+    for (int i = 0; i < SIZE; i++)
+        for (int j = 0; j <= i; j++)
+            file >> array[i][j];
+    file.close();
 
-    cout << x[0][0] << endl;
+    for (int i = SIZE - 2; i >= 0; i--)
+        for (int j = 0; j <= i; j++)
+            array[i][j] += max(array[i + 1][j], array[i + 1][j + 1]);
+
+    cout << array[0][0] << endl;
 
     return 0;
 }

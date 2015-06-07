@@ -1,8 +1,9 @@
-// 081.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
-int min(int a, int b) {
+inline int min(int a, int b) {
     return (a < b) ? a : b;
 }
 
@@ -11,9 +12,12 @@ int main() {
     int SIZE = 80;
     int a[SIZE][SIZE];
 
+    ifstream file;
+    file.open("src/0081.txt");
     for ( int i = 0; i < SIZE; i++ )
         for ( int j = 0; j < SIZE; j++ )
-            cin >> a[i][j];
+            file >> a[i][j];
+    file.close();
 
     for ( int i = 1; i < SIZE; i++ )
         a[i][0] += a[i - 1][0];

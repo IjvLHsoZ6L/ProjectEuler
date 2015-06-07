@@ -1,5 +1,6 @@
-// 079.cpp
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
 int main() {
@@ -7,13 +8,16 @@ int main() {
     int CODE = 50;
     int code[CODE][3];
 
+    ifstream file;
+    file.open("src/0079.txt");
     for ( int i = 0; i < CODE; i++ ) {
         int n;
-        cin >> n;
+        file >> n;
         code[i][0] = n / 10 / 10;
         code[i][1] = n / 10 % 10;
         code[i][2] = n % 10;
     }
+    file.close();
 
     bool remain[10];
     bool align[10][10];

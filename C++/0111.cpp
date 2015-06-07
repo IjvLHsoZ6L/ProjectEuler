@@ -43,7 +43,6 @@ void sub(int d, int m, int k) {
 
         for ( long long n = 0; n < target; n++ ) {
 
-            int other[m];
             for ( long long N = n, i = 0; i < m; i++, N /= 10 )
                 digit[choice[i]] = N % 10;
 
