@@ -1,41 +1,71 @@
 #include <iostream>
+#include <list>
+#include <set>
+
 using namespace std;
+
+const int MAX = 120000;
+
+set<int> pairs[MAX / 2 + 1];
+
+set<int> sums;
+
+const int SIZE = 3 * MAX + 1;
+
+list<int> divisors[SIZE];
+
+inline long min_square(long n) {
+    long m = 1;
+    for (int d : divisors[n]) {
+        int count = 0;
+        while (n % d == 0) {
+            n /= d;
+            count++;
+        }
+        while (count > 0) {
+            m *= d;
+            count -= 2;
+        }
+    }
+    return m;
+}
+
+int sum;
 
 int main() {
 
-  int const LIMIT = 120000;
-  bool isSum[LIMIT + 1];
-  for (int i = 0; i <= LIMIT; i++)
-    isSum[i] = false;
+    for (int i = 2; i < SIZE; i++)
+        if (divisors[i].empty())
+            for (int j = i; j < SIZE; j += i)
+                divisors[j].push_back(i);
 
-  for (long long p = 1; p + p + p <= LIMIT; p++) {
-    long long a = p;
-    for (long long q = p + 1; p + q + q <= LIMIT; q++) {
-      while (a * a < p * p + p * q + q * q)
-        a++;
-      if (a * a == p * p + p * q + q * q) {
-        long long b = q;
-        long long c = q;
-        for (long long r = q + 1; p + q + r <= LIMIT; r++) {
-          while (b * b < p * p + p * r + r * r)
-            b++;
-          if (b * b == p * p + p * r + r * r) {
-            while (c * c < q * q + q * r + r * r)
-              c++;
-            if (c * c == q * q + q * r + r * r) {
-              //cout << p + q + r << endl;
-              isSum[p + q + r] = true;
-            }
-          }
+    long p, q;
+    for (long s = 1; s <= MAX; s++) {
+        long t0 = min_square(3 * s) / 3;
+        long t = t0;
+        while (t <= s)
+            t += t0;
+        while (true) {
+            q = 2 * t - s;
+            p = (3 * t * t - 4 * t * s + s * s) / s;
+            if (p > q or p + q > MAX)
+                break;
+            pairs[p].insert(q);
+            t += t0;
         }
-      }
     }
-  }
 
-  long long sum = 0;
-  for (int i = 0; i <= LIMIT; i++)
-    if (isSum[i])
-      sum += i;
+    for (int p = 1; p + p + p <= MAX; p++)
+        for (int q : pairs[p])
+            for (int r : pairs[p])
+                if (q < r and p + q + r <= MAX and pairs[q].count(r) > 0)
+                    sums.insert(p + q + r);
 
-  cout << sum << endl;
+    sum = 0;
+    for (int s : sums)
+        sum += s;
+
+    cout << sum << endl;
+
+    return 0;
 }
