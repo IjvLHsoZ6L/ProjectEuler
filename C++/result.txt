@@ -1,1001 +1,870 @@
 0001.cpp
 233168
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0002.cpp
 4613732
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0003.cpp
 6857
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0004.cpp
 906609
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0005.cpp
 232792560
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0006.cpp
 25164150
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0007.cpp
 104743
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0008.cpp
 23514624000
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0009.cpp
 31875000
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0010.cpp
 142913828922
-
-real	0m0.009s
-user	0m0.008s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0011.cpp
 70600674
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0012.cpp
 76576500
-
-real	0m0.084s
-user	0m0.080s
-sys	0m0.000s
+real 0.08
+user 0.08
+sys 0.00
 
 0013.cpp
 5537376230
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0014.cpp
 837799
-
-real	0m0.020s
-user	0m0.016s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0015.cpp
 137846528820
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0016.cpp
 1366
-
-real	0m0.006s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0017.cpp
 21124
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0018.cpp
 1074
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0019.cpp
 171
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0020.cpp
 648
-
-real	0m0.006s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0021.cpp
 31626
-
-real	0m0.074s
-user	0m0.072s
-sys	0m0.000s
+real 0.07
+user 0.07
+sys 0.00
 
 0022.cpp
 871198282
-
-real	0m0.306s
-user	0m0.304s
-sys	0m0.000s
+real 0.30
+user 0.30
+sys 0.00
 
 0023.cpp
 4179871
-
-real	0m0.090s
-user	0m0.088s
-sys	0m0.000s
+real 0.09
+user 0.08
+sys 0.00
 
 0024.cpp
 2783915460
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0025.cpp
 983
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0026.cpp
 983
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0027.cpp
 -59231
-
-real	0m0.017s
-user	0m0.012s
-sys	0m0.004s
+real 0.01
+user 0.01
+sys 0.00
 
 0028.cpp
 669171001
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0029.cpp
 9183
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0030.cpp
 443839
-
-real	0m0.015s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0031.cpp
 73682
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0032.cpp
 45228
-
-real	0m0.007s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0033.cpp
 100
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0034.cpp
 40730
-
-real	0m0.030s
-user	0m0.028s
-sys	0m0.000s
+real 0.03
+user 0.02
+sys 0.00
 
 0035.cpp
 55
-
-real	0m0.015s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0036.cpp
 872187
-
-real	0m0.151s
-user	0m0.148s
-sys	0m0.000s
+real 0.15
+user 0.14
+sys 0.00
 
 0037.cpp
 748317
-
-real	0m0.010s
-user	0m0.008s
-sys	0m0.000s
+real 0.01
+user 0.00
+sys 0.00
 
 0038.cpp
 932718654
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0039.cpp
 840
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0040.cpp
 210
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0041.cpp
 7652413
-
-real	0m0.147s
-user	0m0.144s
-sys	0m0.000s
+real 0.14
+user 0.14
+sys 0.00
 
 0042.cpp
 162
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0043.cpp
 16695334890
-
-real	0m0.636s
-user	0m0.636s
-sys	0m0.000s
+real 0.63
+user 0.63
+sys 0.00
 
 0044.cpp
 5482660
-
-real	0m1.901s
-user	0m1.900s
-sys	0m0.000s
+real 1.88
+user 1.88
+sys 0.00
 
 0045.cpp
 1533776805
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0046.cpp
 5777
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0047.cpp
 134043
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0048.cpp
 9110846700
-
-real	0m0.019s
-user	0m0.016s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0049.cpp
 296962999629
-
-real	0m0.011s
-user	0m0.008s
-sys	0m0.000s
+real 0.01
+user 0.00
+sys 0.00
 
 0050.cpp
 997651
-
-real	0m0.006s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0051.cpp
 121313
-
-real	0m0.097s
-user	0m0.096s
-sys	0m0.000s
+real 0.09
+user 0.09
+sys 0.00
 
 0052.cpp
 142857
-
-real	0m0.020s
-user	0m0.016s
-sys	0m0.000s
+real 0.02
+user 0.01
+sys 0.00
 
 0053.cpp
 4075
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0054.cpp
 376
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0055.cpp
 249
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0056.cpp
 972
-
-real	0m0.011s
-user	0m0.008s
-sys	0m0.000s
+real 0.01
+user 0.00
+sys 0.00
 
 0057.cpp
 153
-
-real	0m0.003s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0058.cpp
 26241
-
-real	0m1.037s
-user	0m1.036s
-sys	0m0.000s
+real 1.03
+user 1.02
+sys 0.00
 
 0059.cpp
 107397
-
-real	0m0.043s
-user	0m0.040s
-sys	0m0.000s
+real 0.04
+user 0.04
+sys 0.00
 
 0060.cpp
 26033
-
-real	0m0.989s
-user	0m0.972s
-sys	0m0.016s
+real 0.96
+user 0.95
+sys 0.01
 
 0061.cpp
 28684
-
-real	0m0.009s
-user	0m0.008s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0062.cpp
 127035954683
-
-real	0m0.260s
-user	0m0.260s
-sys	0m0.000s
+real 0.25
+user 0.25
+sys 0.00
 
 0063.cpp
 49
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0064.cpp
 1322
-
-real	0m0.007s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0065.cpp
 272
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0066.cpp
 661
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0067.cpp
 7273
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0068.cpp
 6531031914842725
-
-real	0m0.635s
-user	0m0.632s
-sys	0m0.000s
+real 0.62
+user 0.62
+sys 0.00
 
 0069.cpp
 510510
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0070.cpp
 8319823
-
-real	0m0.038s
-user	0m0.036s
-sys	0m0.000s
+real 0.03
+user 0.03
+sys 0.00
 
 0071.cpp
 428570
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0072.cpp
 303963552391
-
-real	0m0.022s
-user	0m0.020s
-sys	0m0.000s
+real 0.02
+user 0.01
+sys 0.00
 
 0073.cpp
 7295372
-
-real	0m0.182s
-user	0m0.164s
-sys	0m0.016s
+real 0.17
+user 0.16
+sys 0.01
 
 0074.cpp
 402
-
-real	0m0.057s
-user	0m0.056s
-sys	0m0.000s
+real 0.05
+user 0.05
+sys 0.00
 
 0075.cpp
 161667
-
-real	0m0.029s
-user	0m0.028s
-sys	0m0.000s
+real 0.02
+user 0.02
+sys 0.00
 
 0076.cpp
 190569291
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0077.cpp
 71
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0078.cpp
 55374
-
-real	0m3.947s
-user	0m3.948s
-sys	0m0.000s
+real 3.84
+user 3.84
+sys 0.00
 
 0079.cpp
 73162890
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0080.cpp
 40886
-
-real	0m0.029s
-user	0m0.028s
-sys	0m0.000s
+real 0.02
+user 0.02
+sys 0.00
 
 0081.cpp
 427337
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0082.cpp
 260324
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0083.cpp
 425185
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0084.cpp
 101524
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0085.cpp
 2772
-
-real	0m0.007s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0086.cpp
 1818
-
-real	0m0.008s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0087.cpp
 1097343
-
-real	0m0.063s
-user	0m0.056s
-sys	0m0.004s
+real 0.05
+user 0.05
+sys 0.00
 
 0088.cpp
 7587457
-
-real	0m0.442s
-user	0m0.336s
-sys	0m0.104s
+real 0.41
+user 0.32
+sys 0.09
 
 0089.cpp
 743
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0090.cpp
 1217
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0091.cpp
 14234
-
-real	0m0.010s
-user	0m0.008s
-sys	0m0.000s
+real 0.01
+user 0.00
+sys 0.00
 
 0092.cpp
 8581146
-
-real	0m0.141s
-user	0m0.136s
-sys	0m0.004s
+real 0.14
+user 0.13
+sys 0.00
 
 0093.cpp
 1258
-
-real	0m0.014s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0094.cpp
 518408346
-
-real	0m0.834s
-user	0m0.832s
-sys	0m0.000s
+real 0.81
+user 0.80
+sys 0.00
 
 0095.cpp
 14316
-
-real	0m0.167s
-user	0m0.164s
-sys	0m0.000s
+real 0.15
+user 0.14
+sys 0.00
 
 0096.cpp
 24702
-
-real	0m0.011s
-user	0m0.008s
-sys	0m0.000s
+real 0.01
+user 0.00
+sys 0.00
 
 0097.cpp
 8739992577
-
-real	0m0.031s
-user	0m0.028s
-sys	0m0.000s
+real 0.03
+user 0.02
+sys 0.00
 
 0098.cpp
 18769
-
-real	0m1.533s
-user	0m1.472s
-sys	0m0.060s
+real 1.50
+user 1.42
+sys 0.08
 
 0099.cpp
 709
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0100.cpp
 756872327473
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0101.cpp
 37076114526
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0102.cpp
 228
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0103.cpp
 20313839404245
-
-real	0m0.915s
-user	0m0.912s
-sys	0m0.000s
+real 0.90
+user 0.90
+sys 0.00
 
 0104.cpp
 329468
-
-real	0m0.069s
-user	0m0.068s
-sys	0m0.000s
+real 0.06
+user 0.06
+sys 0.00
 
 0105.cpp
 73702
-
-real	0m0.013s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0106.cpp
 21384
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0107.cpp
 259679
-
-real	0m0.007s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0108.cpp
 180180
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0109.cpp
 38182
-
-real	0m0.002s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0110.cpp
 9350130049860600
-
-real	0m0.004s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0111.cpp
 612407567715
-
-real	0m0.015s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0112.cpp
 1587000
-
-real	0m0.041s
-user	0m0.040s
-sys	0m0.000s
+real 0.04
+user 0.04
+sys 0.00
 
 0113.cpp
 51161058134250
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0114.cpp
 16475640049
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0115.cpp
 168
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0116.cpp
 20492570929
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0117.cpp
 100808458960497
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0118.cpp
 44680
-
-real	0m1.057s
-user	0m1.044s
-sys	0m0.012s
+real 1.00
+user 1.00
+sys 0.00
 
 0119.cpp
 248155780267521
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0120.cpp
 333082500
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0121.cpp
 2269
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0122.cpp
 2179
-
-real	0m0.616s
-user	0m0.616s
-sys	0m0.000s
+real 0.60
+user 0.60
+sys 0.00
 
 0123.cpp
 21035
-
-real	0m4.045s
-user	0m4.044s
-sys	0m0.000s
+real 3.97
+user 3.97
+sys 0.00
 
 0124.cpp
 21417
-
-real	0m0.014s
-user	0m0.012s
-sys	0m0.000s
+real 0.01
+user 0.01
+sys 0.00
 
 0125.cpp
 2906969179
-
-real	0m0.154s
-user	0m0.136s
-sys	0m0.016s
+real 0.14
+user 0.12
+sys 0.02
 
 0126.cpp
 18522
-
-real	0m0.007s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0127.cpp
 18407904
-
-real	0m1.089s
-user	0m1.084s
-sys	0m0.004s
+real 1.05
+user 1.05
+sys 0.00
 
 0128.cpp
 14516824220
-
-real	0m0.005s
-user	0m0.004s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0129.cpp
 1000023
-
-real	0m0.021s
-user	0m0.020s
-sys	0m0.000s
+real 0.02
+user 0.02
+sys 0.00
 
 0130.cpp
 149253
-
-real	0m0.069s
-user	0m0.068s
-sys	0m0.000s
+real 0.06
+user 0.06
+sys 0.00
 
 0131.cpp
 173
-
-real	0m0.079s
-user	0m0.076s
-sys	0m0.000s
+real 0.07
+user 0.07
+sys 0.00
 
 0132.cpp
 843296
-
-real	0m6.264s
-user	0m6.264s
-sys	0m0.004s
+real 0.00
+user 0.00
+sys 0.00
 
 0133.cpp
 453647705
-
-real	0m2.566s
-user	0m2.564s
-sys	0m0.000s
+real 2.55
+user 2.56
+sys 0.00
 
 0134.cpp
 18613426663617118
-
-real	0m0.034s
-user	0m0.032s
-sys	0m0.000s
+real 0.03
+user 0.03
+sys 0.00
 
 0135.cpp
 4989
-
-real	0m3.551s
-user	0m3.552s
-sys	0m0.000s
+real 3.49
+user 3.49
+sys 0.00
 
 0136.cpp
 2544559
-
-real	0m2.383s
-user	0m2.364s
-sys	0m0.020s
+real 2.31
+user 2.29
+sys 0.01
 
 0137.cpp
 1120149658760
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0138.cpp
 1118049290473932
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0139.cpp
 10057761
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0140.cpp
 5673835352990
-
-real	0m0.001s
-user	0m0.000s
-sys	0m0.000s
+real 0.00
+user 0.00
+sys 0.00
 
 0141.cpp
 878454337159
-
-real	0m0.812s
-user	0m0.812s
-sys	0m0.000s
+real 0.79
+user 0.79
+sys 0.00
 
 0142.cpp
 1006193
-
-real	0m0.479s
-user	0m0.476s
-sys	0m0.000s
+real 0.46
+user 0.46
+sys 0.00
 
 0143.cpp
 30758397
+real 0.20
+user 0.19
+sys 0.00
 
-real	0m0.222s
-user	0m0.212s
-sys	0m0.008s
+0144.cpp
+354
+real 0.00
+user 0.00
+sys 0.00
+
+0145.cpp
+608720
+real 0.00
+user 0.00
+sys 0.00
 
