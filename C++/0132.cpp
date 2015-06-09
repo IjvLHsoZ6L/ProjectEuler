@@ -1,33 +1,44 @@
-// 0132.cpp
 #include <iostream>
+
 using namespace std;
+
+inline int power(int base, int index, int modulo) {
+    int accum = 1;
+    while (index > 0) {
+        if (index % 2 == 0) {
+            base = 1L * base * base % modulo;
+            index /= 2;
+        }
+        else {
+            accum = 1L * accum * base % modulo;
+            index--;
+        }
+    }
+    return accum;
+}
+
+const int N = 1e9;
+
+const int PRIME = 2e5;
+
+bool prime[PRIME];
 
 int main() {
 
-    int pmax = 1e6;
-    bool prime[pmax];
-    for ( int i = 2; i < pmax; i++ )
-        prime[i] = true;
-    for ( int i = 2; i * i < pmax; i++ )
-        if ( prime[i] )
-            for ( int j = i; i * j < pmax; j++ )
-                prime[i * j] = false;
+    for (int n = 2; n < PRIME; n++)
+        prime[n] = true;
+    for (int n = 2; n * n < PRIME; n++)
+        if (prime[n])
+            for (int m = n * n; m < PRIME; m += n)
+                prime[m] = false;
 
-    int target = 1e9;
-
-    int cnt = 0;
     int sum = 0;
-    for ( int p = 7; cnt < 40; p++ ) {
-        if ( prime[p] ) {
-
-            int k = 1;
-            for ( int R = 1; R > 0; k++ )
-                R = (R * 10 + 1) % p;
-
-            if ( target % k == 0 ) {
-                cnt++;
-                sum += p;
-            }
+    for (int p = 7, count = 0; count < 40; p++) {
+        if (!prime[p])
+            continue;
+        if (power(10, N, p) == 1) {
+            count++;
+            sum += p;
         }
     }
 
