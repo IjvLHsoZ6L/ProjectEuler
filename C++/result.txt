@@ -1,868 +1,868 @@
-0001.cpp
+0001.out
 233168
 real 0.00
 user 0.00
 sys 0.00
 
-0002.cpp
+0002.out
 4613732
 real 0.00
 user 0.00
 sys 0.00
 
-0003.cpp
+0003.out
 6857
 real 0.00
 user 0.00
 sys 0.00
 
-0004.cpp
+0004.out
 906609
 real 0.00
 user 0.00
 sys 0.00
 
-0005.cpp
+0005.out
 232792560
 real 0.00
 user 0.00
 sys 0.00
 
-0006.cpp
+0006.out
 25164150
 real 0.00
 user 0.00
 sys 0.00
 
-0007.cpp
+0007.out
 104743
 real 0.00
 user 0.00
 sys 0.00
 
-0008.cpp
+0008.out
 23514624000
 real 0.00
 user 0.00
 sys 0.00
 
-0009.cpp
+0009.out
 31875000
 real 0.00
 user 0.00
 sys 0.00
 
-0010.cpp
+0010.out
 142913828922
 real 0.00
 user 0.00
 sys 0.00
 
-0011.cpp
+0011.out
 70600674
 real 0.00
 user 0.00
 sys 0.00
 
-0012.cpp
+0012.out
 76576500
 real 0.08
 user 0.08
 sys 0.00
 
-0013.cpp
+0013.out
 5537376230
 real 0.00
 user 0.00
 sys 0.00
 
-0014.cpp
+0014.out
 837799
 real 0.01
 user 0.01
 sys 0.00
 
-0015.cpp
+0015.out
 137846528820
 real 0.00
 user 0.00
 sys 0.00
 
-0016.cpp
+0016.out
 1366
 real 0.00
 user 0.00
 sys 0.00
 
-0017.cpp
+0017.out
 21124
 real 0.00
 user 0.00
 sys 0.00
 
-0018.cpp
+0018.out
 1074
 real 0.00
 user 0.00
 sys 0.00
 
-0019.cpp
+0019.out
 171
 real 0.00
 user 0.00
 sys 0.00
 
-0020.cpp
+0020.out
 648
 real 0.00
 user 0.00
 sys 0.00
 
-0021.cpp
+0021.out
 31626
 real 0.07
 user 0.07
 sys 0.00
 
-0022.cpp
+0022.out
 871198282
 real 0.30
 user 0.30
 sys 0.00
 
-0023.cpp
+0023.out
 4179871
-real 0.09
+real 0.08
 user 0.08
 sys 0.00
 
-0024.cpp
+0024.out
 2783915460
 real 0.00
 user 0.00
 sys 0.00
 
-0025.cpp
+0025.out
 983
 real 0.00
 user 0.00
 sys 0.00
 
-0026.cpp
+0026.out
 983
 real 0.00
 user 0.00
 sys 0.00
 
-0027.cpp
+0027.out
 -59231
 real 0.01
 user 0.01
 sys 0.00
 
-0028.cpp
+0028.out
 669171001
 real 0.00
 user 0.00
 sys 0.00
 
-0029.cpp
+0029.out
 9183
 real 0.00
 user 0.00
 sys 0.00
 
-0030.cpp
+0030.out
 443839
 real 0.01
 user 0.01
 sys 0.00
 
-0031.cpp
+0031.out
 73682
 real 0.00
 user 0.00
 sys 0.00
 
-0032.cpp
+0032.out
 45228
 real 0.00
 user 0.00
 sys 0.00
 
-0033.cpp
+0033.out
 100
 real 0.00
 user 0.00
 sys 0.00
 
-0034.cpp
+0034.out
 40730
 real 0.03
 user 0.02
 sys 0.00
 
-0035.cpp
+0035.out
 55
 real 0.01
 user 0.01
 sys 0.00
 
-0036.cpp
+0036.out
 872187
 real 0.15
-user 0.14
+user 0.15
 sys 0.00
 
-0037.cpp
+0037.out
 748317
 real 0.01
 user 0.00
 sys 0.00
 
-0038.cpp
+0038.out
 932718654
 real 0.00
 user 0.00
 sys 0.00
 
-0039.cpp
+0039.out
 840
 real 0.00
 user 0.00
 sys 0.00
 
-0040.cpp
+0040.out
 210
 real 0.00
 user 0.00
 sys 0.00
 
-0041.cpp
+0041.out
 7652413
 real 0.14
 user 0.14
 sys 0.00
 
-0042.cpp
+0042.out
 162
 real 0.00
 user 0.00
 sys 0.00
 
-0043.cpp
+0043.out
 16695334890
-real 0.63
-user 0.63
+real 0.64
+user 0.64
 sys 0.00
 
-0044.cpp
+0044.out
 5482660
-real 1.88
-user 1.88
+real 1.90
+user 1.90
 sys 0.00
 
-0045.cpp
+0045.out
 1533776805
 real 0.00
 user 0.00
 sys 0.00
 
-0046.cpp
+0046.out
 5777
 real 0.00
 user 0.00
 sys 0.00
 
-0047.cpp
+0047.out
 134043
 real 0.00
 user 0.00
 sys 0.00
 
-0048.cpp
+0048.out
 9110846700
-real 0.01
+real 0.02
 user 0.01
 sys 0.00
 
-0049.cpp
+0049.out
 296962999629
 real 0.01
 user 0.00
 sys 0.00
 
-0050.cpp
+0050.out
 997651
 real 0.00
 user 0.00
 sys 0.00
 
-0051.cpp
+0051.out
 121313
 real 0.09
 user 0.09
 sys 0.00
 
-0052.cpp
+0052.out
 142857
 real 0.02
-user 0.01
+user 0.02
 sys 0.00
 
-0053.cpp
+0053.out
 4075
 real 0.00
 user 0.00
 sys 0.00
 
-0054.cpp
+0054.out
 376
 real 0.00
 user 0.00
 sys 0.00
 
-0055.cpp
+0055.out
 249
 real 0.00
 user 0.00
 sys 0.00
 
-0056.cpp
+0056.out
 972
 real 0.01
 user 0.00
 sys 0.00
 
-0057.cpp
+0057.out
 153
 real 0.00
 user 0.00
 sys 0.00
 
-0058.cpp
+0058.out
 26241
-real 1.03
-user 1.02
+real 1.04
+user 1.04
 sys 0.00
 
-0059.cpp
+0059.out
 107397
 real 0.04
 user 0.04
 sys 0.00
 
-0060.cpp
+0060.out
 26033
-real 0.96
-user 0.95
-sys 0.01
+real 0.97
+user 0.96
+sys 0.00
 
-0061.cpp
+0061.out
 28684
 real 0.00
 user 0.00
 sys 0.00
 
-0062.cpp
+0062.out
 127035954683
-real 0.25
-user 0.25
+real 0.26
+user 0.26
 sys 0.00
 
-0063.cpp
+0063.out
 49
 real 0.00
 user 0.00
 sys 0.00
 
-0064.cpp
+0064.out
 1322
 real 0.00
 user 0.00
 sys 0.00
 
-0065.cpp
+0065.out
 272
 real 0.00
 user 0.00
 sys 0.00
 
-0066.cpp
+0066.out
 661
 real 0.00
 user 0.00
 sys 0.00
 
-0067.cpp
+0067.out
 7273
 real 0.00
 user 0.00
 sys 0.00
 
-0068.cpp
+0068.out
 6531031914842725
-real 0.62
+real 0.63
 user 0.62
 sys 0.00
 
-0069.cpp
+0069.out
 510510
 real 0.00
 user 0.00
 sys 0.00
 
-0070.cpp
+0070.out
 8319823
 real 0.03
 user 0.03
 sys 0.00
 
-0071.cpp
+0071.out
 428570
 real 0.00
 user 0.00
 sys 0.00
 
-0072.cpp
+0072.out
 303963552391
 real 0.02
-user 0.01
+user 0.02
 sys 0.00
 
-0073.cpp
+0073.out
 7295372
-real 0.17
+real 0.18
 user 0.16
 sys 0.01
 
-0074.cpp
+0074.out
 402
 real 0.05
 user 0.05
 sys 0.00
 
-0075.cpp
+0075.out
 161667
-real 0.02
-user 0.02
+real 0.03
+user 0.03
 sys 0.00
 
-0076.cpp
+0076.out
 190569291
 real 0.00
 user 0.00
 sys 0.00
 
-0077.cpp
+0077.out
 71
 real 0.00
 user 0.00
 sys 0.00
 
-0078.cpp
+0078.out
 55374
-real 3.84
-user 3.84
+real 3.86
+user 3.86
 sys 0.00
 
-0079.cpp
+0079.out
 73162890
 real 0.00
 user 0.00
 sys 0.00
 
-0080.cpp
+0080.out
 40886
-real 0.02
+real 0.03
 user 0.02
 sys 0.00
 
-0081.cpp
+0081.out
 427337
 real 0.00
 user 0.00
 sys 0.00
 
-0082.cpp
+0082.out
 260324
 real 0.00
 user 0.00
 sys 0.00
 
-0083.cpp
+0083.out
 425185
 real 0.00
 user 0.00
 sys 0.00
 
-0084.cpp
+0084.out
 101524
 real 0.00
 user 0.00
 sys 0.00
 
-0085.cpp
+0085.out
 2772
 real 0.00
 user 0.00
 sys 0.00
 
-0086.cpp
+0086.out
 1818
 real 0.00
 user 0.00
 sys 0.00
 
-0087.cpp
+0087.out
 1097343
-real 0.05
+real 0.06
 user 0.05
 sys 0.00
 
-0088.cpp
+0088.out
 7587457
-real 0.41
-user 0.32
-sys 0.09
+real 0.42
+user 0.34
+sys 0.08
 
-0089.cpp
+0089.out
 743
 real 0.00
 user 0.00
 sys 0.00
 
-0090.cpp
+0090.out
 1217
 real 0.00
 user 0.00
 sys 0.00
 
-0091.cpp
+0091.out
 14234
 real 0.01
 user 0.00
 sys 0.00
 
-0092.cpp
+0092.out
 8581146
 real 0.14
-user 0.13
+user 0.14
 sys 0.00
 
-0093.cpp
+0093.out
 1258
 real 0.01
 user 0.01
 sys 0.00
 
-0094.cpp
+0094.out
 518408346
 real 0.81
-user 0.80
+user 0.81
 sys 0.00
 
-0095.cpp
+0095.out
 14316
-real 0.15
-user 0.14
+real 0.16
+user 0.16
 sys 0.00
 
-0096.cpp
+0096.out
 24702
 real 0.01
 user 0.00
 sys 0.00
 
-0097.cpp
+0097.out
 8739992577
 real 0.03
 user 0.02
 sys 0.00
 
-0098.cpp
+0098.out
 18769
-real 1.50
+real 1.52
 user 1.42
-sys 0.08
+sys 0.09
 
-0099.cpp
+0099.out
 709
 real 0.00
 user 0.00
 sys 0.00
 
-0100.cpp
+0100.out
 756872327473
 real 0.00
 user 0.00
 sys 0.00
 
-0101.cpp
+0101.out
 37076114526
 real 0.00
 user 0.00
 sys 0.00
 
-0102.cpp
+0102.out
 228
 real 0.00
 user 0.00
 sys 0.00
 
-0103.cpp
+0103.out
 20313839404245
-real 0.90
-user 0.90
+real 0.86
+user 0.86
 sys 0.00
 
-0104.cpp
+0104.out
 329468
 real 0.06
 user 0.06
 sys 0.00
 
-0105.cpp
+0105.out
 73702
 real 0.01
 user 0.01
 sys 0.00
 
-0106.cpp
+0106.out
 21384
 real 0.00
 user 0.00
 sys 0.00
 
-0107.cpp
+0107.out
 259679
 real 0.00
 user 0.00
 sys 0.00
 
-0108.cpp
+0108.out
 180180
 real 0.00
 user 0.00
 sys 0.00
 
-0109.cpp
+0109.out
 38182
 real 0.00
 user 0.00
 sys 0.00
 
-0110.cpp
+0110.out
 9350130049860600
 real 0.00
 user 0.00
 sys 0.00
 
-0111.cpp
+0111.out
 612407567715
 real 0.01
 user 0.01
 sys 0.00
 
-0112.cpp
+0112.out
 1587000
 real 0.04
 user 0.04
 sys 0.00
 
-0113.cpp
+0113.out
 51161058134250
 real 0.00
 user 0.00
 sys 0.00
 
-0114.cpp
+0114.out
 16475640049
 real 0.00
 user 0.00
 sys 0.00
 
-0115.cpp
+0115.out
 168
 real 0.00
 user 0.00
 sys 0.00
 
-0116.cpp
+0116.out
 20492570929
 real 0.00
 user 0.00
 sys 0.00
 
-0117.cpp
+0117.out
 100808458960497
 real 0.00
 user 0.00
 sys 0.00
 
-0118.cpp
+0118.out
 44680
-real 1.00
+real 1.02
 user 1.00
-sys 0.00
+sys 0.02
 
-0119.cpp
+0119.out
 248155780267521
 real 0.00
 user 0.00
 sys 0.00
 
-0120.cpp
+0120.out
 333082500
 real 0.00
 user 0.00
 sys 0.00
 
-0121.cpp
+0121.out
 2269
 real 0.00
 user 0.00
 sys 0.00
 
-0122.cpp
+0122.out
 2179
-real 0.60
-user 0.60
+real 0.61
+user 0.61
 sys 0.00
 
-0123.cpp
+0123.out
 21035
-real 3.97
-user 3.97
+real 4.00
+user 4.00
 sys 0.00
 
-0124.cpp
+0124.out
 21417
 real 0.01
 user 0.01
 sys 0.00
 
-0125.cpp
+0125.out
 2906969179
-real 0.14
+real 0.15
 user 0.12
 sys 0.02
 
-0126.cpp
+0126.out
 18522
 real 0.00
 user 0.00
 sys 0.00
 
-0127.cpp
+0127.out
 18407904
-real 1.05
-user 1.05
+real 1.06
+user 1.06
 sys 0.00
 
-0128.cpp
+0128.out
 14516824220
 real 0.00
 user 0.00
 sys 0.00
 
-0129.cpp
+0129.out
 1000023
 real 0.02
 user 0.02
 sys 0.00
 
-0130.cpp
+0130.out
 149253
-real 0.06
-user 0.06
+real 0.07
+user 0.07
 sys 0.00
 
-0131.cpp
+0131.out
 173
 real 0.07
 user 0.07
 sys 0.00
 
-0132.cpp
+0132.out
 843296
 real 0.00
 user 0.00
 sys 0.00
 
-0133.cpp
+0133.out
 453647705
-real 2.55
-user 2.56
+real 2.57
+user 2.58
 sys 0.00
 
-0134.cpp
+0134.out
 18613426663617118
 real 0.03
 user 0.03
 sys 0.00
 
-0135.cpp
+0135.out
 4989
-real 3.49
-user 3.49
+real 0.01
+user 0.00
 sys 0.00
 
-0136.cpp
+0136.out
 2544559
-real 2.31
-user 2.29
-sys 0.01
+real 2.29
+user 2.27
+sys 0.02
 
-0137.cpp
+0137.out
 1120149658760
 real 0.00
 user 0.00
 sys 0.00
 
-0138.cpp
+0138.out
 1118049290473932
 real 0.00
 user 0.00
 sys 0.00
 
-0139.cpp
+0139.out
 10057761
 real 0.00
 user 0.00
 sys 0.00
 
-0140.cpp
+0140.out
 5673835352990
 real 0.00
 user 0.00
 sys 0.00
 
-0141.cpp
+0141.out
 878454337159
 real 0.79
 user 0.79
 sys 0.00
 
-0142.cpp
+0142.out
 1006193
-real 0.46
+real 0.47
 user 0.46
 sys 0.00
 
-0143.cpp
+0143.out
 30758397
-real 0.20
-user 0.19
-sys 0.00
+real 0.21
+user 0.20
+sys 0.01
 
-0144.cpp
+0144.out
 354
 real 0.00
 user 0.00
 sys 0.00
 
-0145.cpp
+0145.out
 608720
 real 0.00
 user 0.00
