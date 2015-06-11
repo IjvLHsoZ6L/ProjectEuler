@@ -1,42 +1,57 @@
-// 0133.cpp
 #include <iostream>
+
 using namespace std;
+
+inline long power(long base, long index, long modulo) {
+    long accum = 1;
+    while (index > 0) {
+        if (index % 2 == 0) {
+            index /= 2;
+            base = base * base % modulo;
+        }
+        else {
+            index--;
+            accum = accum * base % modulo;
+        }
+    }
+    return accum;
+}
+
+const int LIMIT = 1E5;
+
+bool prime[LIMIT];
 
 int main() {
 
-    int target = 1e5;
-    bool prime[target];
-    for ( int n = 2; n < target; n++ )
-        prime[n] = true;
-    for ( int n = 2; n * n < target; n++ )
-        if ( prime[n] )
-            for ( int m = n; m * n < target; m++ )
-                prime[m * n] = false;
+    for (int i = 2; i < LIMIT; i++)
+        prime[i] = true;
+    for (int i = 2; i * i < LIMIT; i++)
+        if (prime[i])
+            for (int j = i * i; j < LIMIT; j += i)
+                prime[j] = false;
 
 
     int sum = 0;
-    for ( int n = 2; n < target; n++ ) {
-        if ( prime[n] ) {
+    for (int p = 2; p < LIMIT; p++) {
 
-            if ( n == 2 or n == 5 )
-                sum += n;
+        if (!prime[p])
+            continue;
 
-            else {
-
-                int k = 1;
-                for ( int R = 1; R > 0; k++ )
-                    R = (10 * R + 1) % n;
-
-                while ( k % 2 == 0 )
-                    k /= 2;
-
-                while ( k % 5 == 0 )
-                    k /= 5;
-
-                if ( k > 1 )
-                    sum += n;
-            }
+        if (p == 3) {
+            sum += p;
+            continue;
         }
+
+        int power_of_two = 1;
+        while (power_of_two * 2 <= p - 1)
+            power_of_two *= 2;
+
+        int power_of_five = 1;
+        while (power_of_five * 5 <= p - 1)
+            power_of_five *= 5;
+
+        if (power(10, 1L * power_of_two * power_of_five, p) != 1)
+            sum += p;
     }
 
     cout << sum << endl;
