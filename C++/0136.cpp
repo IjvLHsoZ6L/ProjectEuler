@@ -1,26 +1,26 @@
-// 0136.cpp
 #include <iostream>
+
 using namespace std;
+
+const int LIMIT = 5E7;
+
+int n_solutions[LIMIT];
 
 int main() {
 
-    const int target = 5e7;
+    for (int n = 1; n < LIMIT; n++)
+        n_solutions[n] = 0;
 
-    static int solutions[target];
-    for ( int n = 1; n < target; n++ )
-        solutions[n] = 0;
+    for (int m = 1; m < LIMIT; m++)
+        for (int n = m * (4 - m % 4); n < LIMIT and n < 3L * m * m; n += 4 * m)
+            n_solutions[n]++;
 
-    for ( int a = 1; a < target; a++ )
-        for ( int d = 1; d < 3 * a and a * d < target; d++ )
-            if ( (a + d) % 4 == 0 )
-                solutions[a * d]++;
+    int count = 0;
+    for (int n = 1; n < LIMIT; n++)
+        if (n_solutions[n] == 1)
+            count++;
 
-    int cnt = 0;
-    for ( int n = 1; n < target; n++ )
-        if ( solutions[n] == 1 )
-            cnt++;
-
-    cout << cnt << endl;
+    cout << count << endl;
 
     return 0;
 }
