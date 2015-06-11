@@ -1,52 +1,42 @@
-// 0044.cpp
 #include <iostream>
+#include <map>
+
 using namespace std;
+
+inline int pentagonal(int n) {
+    return n * (3 * n - 1) / 2;
+}
+
+const int LIMIT = 5E3;
+
+map<int, int> sum_map[LIMIT];
 
 int main() {
 
-    // P1 + P2 = P3, P1 + P2 + P2 = P4
+    int i, j, k, sum;
+    map<int, int>::iterator it;
 
-    bool detected = false;
-    int answer;
-    int P1 = 1, dP1 = 4, ddP = 3;
-    while ( not detected ) {
-
-        long long P2 = 1, dP2 = 4;
-        long long P3 = 1, dP3 = 4;
-        long long P4 = 1, dP4 = 4;
-
-        bool safe = true;
-        while ( safe ) {
-
-            while ( P3 < P1 + P2 ) {
-                P3 += dP3;
-                dP3 += ddP;
-            }
-
-            while ( P4 < P1 + P2 + P2 ) {
-                P4 += dP4;
-                dP4 += ddP;
-            }
-
-            if ( P3 == P1 + P2 and P4 == P1 + P2 + P2 ) {
-                safe = false;
-                detected = true;
-                answer = P1;
-            }
-            else {
-                P2 += dP2;
-                dP2 += ddP;
-
-                if ( dP2 > P1 )
-                    safe = false;
-            }
+    for (i = 1; i < LIMIT; i++) {
+        k = i;
+        for (j = 1; j < LIMIT; j++) {
+            sum = pentagonal(i) + pentagonal(j);
+            while (pentagonal(k) < sum)
+                k++;
+            if (pentagonal(k) == sum)
+                sum_map[i].insert(pair<int, int>(j, k));
         }
-
-        P1 += dP1;
-        dP1 += ddP;
     }
 
-    cout << answer << endl;
+    for (i = 1; i < LIMIT; i++) {
+        for (it = sum_map[i].begin(); it != sum_map[i].end(); it++) {
+            j = it->first;
+            k = it->second;
+            if (sum_map[j].find(k) != sum_map[j].end()) {
+                cout << pentagonal(i) << endl;
+                return 0;
+            }
+        }
+    }
 
-    return 0;
+    return 1;
 }
