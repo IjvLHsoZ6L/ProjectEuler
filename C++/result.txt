@@ -54,7 +54,7 @@ sys 0.00
 
 0010.out
 142913828922
-real 0.00
+real 0.01
 user 0.00
 sys 0.00
 
@@ -258,8 +258,8 @@ sys 0.00
 
 0044.out
 5482660
-real 1.89
-user 1.89
+real 0.05
+user 0.05
 sys 0.00
 
 0045.out
@@ -282,7 +282,7 @@ sys 0.00
 
 0048.out
 9110846700
-real 0.02
+real 0.01
 user 0.01
 sys 0.00
 
@@ -307,7 +307,7 @@ sys 0.00
 0052.out
 142857
 real 0.02
-user 0.02
+user 0.01
 sys 0.00
 
 0053.out
@@ -343,7 +343,7 @@ sys 0.00
 0058.out
 26241
 real 1.03
-user 1.03
+user 1.02
 sys 0.00
 
 0059.out
@@ -354,9 +354,9 @@ sys 0.00
 
 0060.out
 26033
-real 0.98
-user 0.96
-sys 0.02
+real 0.96
+user 0.95
+sys 0.01
 
 0061.out
 28684
@@ -366,8 +366,8 @@ sys 0.00
 
 0062.out
 127035954683
-real 0.26
-user 0.26
+real 0.25
+user 0.25
 sys 0.00
 
 0063.out
@@ -402,7 +402,7 @@ sys 0.00
 
 0068.out
 6531031914842725
-real 0.63
+real 0.62
 user 0.62
 sys 0.00
 
@@ -432,9 +432,9 @@ sys 0.00
 
 0073.out
 7295372
-real 0.18
-user 0.17
-sys 0.00
+real 0.17
+user 0.16
+sys 0.01
 
 0074.out
 402
@@ -462,8 +462,8 @@ sys 0.00
 
 0078.out
 55374
-real 3.93
-user 3.92
+real 3.50
+user 3.50
 sys 0.00
 
 0079.out
@@ -517,14 +517,14 @@ sys 0.00
 0087.out
 1097343
 real 0.06
-user 0.05
+user 0.06
 sys 0.00
 
 0088.out
 7587457
 real 0.42
 user 0.32
-sys 0.09
+sys 0.10
 
 0089.out
 743
@@ -558,8 +558,8 @@ sys 0.00
 
 0094.out
 518408346
-real 0.82
-user 0.82
+real 0.81
+user 0.81
 sys 0.00
 
 0095.out
@@ -582,9 +582,9 @@ sys 0.00
 
 0098.out
 18769
-real 1.53
-user 1.45
-sys 0.08
+real 1.19
+user 1.19
+sys 0.00
 
 0099.out
 709
@@ -612,20 +612,20 @@ sys 0.00
 
 0103.out
 20313839404245
-real 0.86
-user 0.86
+real 0.93
+user 0.93
 sys 0.00
 
 0104.out
 329468
-real 0.07
+real 0.06
 user 0.06
 sys 0.00
 
 0105.out
 73702
 real 0.01
-user 0.01
+user 0.00
 sys 0.00
 
 0106.out
@@ -667,7 +667,7 @@ sys 0.00
 0112.out
 1587000
 real 0.04
-user 0.03
+user 0.04
 sys 0.00
 
 0113.out
@@ -704,7 +704,7 @@ sys 0.00
 44680
 real 1.02
 user 1.01
-sys 0.01
+sys 0.00
 
 0119.out
 248155780267521
@@ -726,7 +726,7 @@ sys 0.00
 
 0122.out
 2179
-real 0.61
+real 0.60
 user 0.60
 sys 0.00
 
@@ -756,7 +756,7 @@ sys 0.00
 
 0127.out
 18407904
-real 1.07
+real 1.06
 user 1.06
 sys 0.00
 
@@ -792,8 +792,8 @@ sys 0.00
 
 0133.out
 453647705
-real 2.57
-user 2.56
+real 0.00
+user 0.00
 sys 0.00
 
 0134.out
@@ -805,13 +805,13 @@ sys 0.00
 0135.out
 4989
 real 0.01
-user 0.00
+user 0.01
 sys 0.00
 
 0136.out
 2544559
-real 2.31
-user 2.30
+real 1.28
+user 1.27
 sys 0.01
 
 0137.out
@@ -840,21 +840,21 @@ sys 0.00
 
 0141.out
 878454337159
-real 0.80
-user 0.80
+real 0.79
+user 0.79
 sys 0.00
 
 0142.out
 1006193
-real 0.47
-user 0.47
+real 0.46
+user 0.46
 sys 0.00
 
 0143.out
 30758397
-real 0.22
-user 0.21
-sys 0.01
+real 0.21
+user 0.18
+sys 0.02
 
 0144.out
 354
