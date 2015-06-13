@@ -12,7 +12,7 @@ int main() {
         n_solutions[n] = 0;
 
     for (int m = 1; m < LIMIT; m++)
-        for (int n = m * (4 - m % 4); n < LIMIT and n < 3L * m * m; n += 4 * m)
+        for (int d = m / 4 + 1, n = m * (4 * d - m); n < LIMIT and d < m; d++, n += 4 * m)
             n_solutions[n]++;
 
     int count = 0;
