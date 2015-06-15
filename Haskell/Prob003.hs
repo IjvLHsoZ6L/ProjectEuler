@@ -5,11 +5,11 @@ answer :: Integer
 answer = largestPrimeFactor 600851475143
 
 largestPrimeFactor :: Integer -> Integer
-largestPrimeFactor = f 2 where
-    f d n
+largestPrimeFactor = aux 2 where
+    aux d n
         | n < d * d
             = n
         | n `mod` d == 0
-            = f d (n `div` d)
+            = aux d (n `div` d)
         | otherwise
-            = f (d + 1) n
+            = aux (d + 1) n

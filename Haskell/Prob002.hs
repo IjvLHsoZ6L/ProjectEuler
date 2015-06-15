@@ -2,7 +2,8 @@ main :: IO ()
 main = print answer
 
 answer :: Int
-answer = sum [ x | x <- takeWhile (<= 4000000) fibonacci , even x ]
+answer = sum $ filter even $ takeWhile (<= 4000000) fibonacci
 
 fibonacci :: [Int]
-fibonacci = f 1 2 where f a b = a : f b (a + b)
+fibonacci = aux 0 1 where
+    aux a b = a : aux b (a + b)

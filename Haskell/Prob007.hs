@@ -1,19 +1,7 @@
-import Data.Array.Unboxed
+import Util.Prime
 
 main :: IO ()
 main = print answer
 
 answer :: Int
-answer = primesTo 2000000 !! 10001
-
-primesTo :: Int -> [Int]
-primesTo n = aux 2 a0 where
-    aux i a
-        | i * i > n
-            = filter (a !) [i .. n]
-        | a ! i
-            = i : aux (i + 1) a'
-        | otherwise
-            = aux (i + 1) a
-        where a' = a // [ (i * j, False) | j <- [i .. n `div` i] ]
-    a0 = array (2, n) [ (i, True) | i <- [2 .. n] ] :: UArray Int Bool
+answer = primeListTo 200000 !! (10001 - 1)

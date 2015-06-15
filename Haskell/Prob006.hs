@@ -2,7 +2,10 @@ main :: IO ()
 main = print answer
 
 answer :: Int
-answer = square (sum [1 .. 100]) - sum (map square [1 .. 100])
+answer = square (sum numbers) - sum (map square numbers)
 
 square :: Int -> Int
-square x = x * x
+square n = n * n
+
+numbers :: [Int]
+numbers = [1 .. 100]

@@ -1,17 +1,14 @@
-import Control.Applicative
 import Data.Char
 
 main :: IO ()
-main = do
-    xs <- map digitToInt . concat . lines <$> readFile "Prob008.txt"
-    print $ answer xs
+main = print . answer =<< readFile "src/008.txt"
 
-answer :: [Int] -> Int
-answer xs = maximum $ map product $ thirteens xs
+answer :: String -> Int
+answer = maximum . map product . subseqs 13 . map digitToInt . concat . words
 
-thirteens :: [a] -> [[a]]
-thirteens xs
-    | length xs >= 13
-        = take 13 xs : thirteens (tail xs)
+subseqs :: Int -> [a] -> [[a]]
+subseqs n xs
+    | length xs >= n
+        = take n xs : subseqs n (tail xs)
     | otherwise
         = []
