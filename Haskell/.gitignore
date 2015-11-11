@@ -4,4 +4,8 @@
 
 !*.hs
 
+!/src
+
 !*.txt
+
+!/Util
