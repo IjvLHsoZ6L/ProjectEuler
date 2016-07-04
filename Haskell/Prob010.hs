@@ -4,4 +4,4 @@ main :: IO ()
 main = print answer
 
 answer :: Int
-answer = sum $ primeListTo (2000000 - 1)
+answer = sum $ takeWhile (< 2000000) primes
